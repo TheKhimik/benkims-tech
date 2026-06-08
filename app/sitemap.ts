@@ -1,19 +1,19 @@
 export default function sitemap() {
   return [
     {
-      url: "https://your-domain.com",
+      url: "https://benkims-tech.vercel.app",
       lastModified: new Date(),
     },
     {
-      url: "https://your-domain.com/projects",
+      url: "https://benkims-tech.vercel.app/projects",
       lastModified: new Date(),
     },
     {
-      url: "https://your-domain.com/gallery",
+      url: "https://benkims-tech.vercel.app/gallery",
       lastModified: new Date(),
     },
     {
-      url: "https://your-domain.com/contact",
+      url: "https://benkims-tech.vercel.app/contact",
       lastModified: new Date(),
     },
   ];
