@@ -55,7 +55,7 @@ export default function RootLayout({
         />
       </head>
 
-      <body className="overflow-x-hidden">
+      <body className="overflow-x-hidden antialiased">
         <Navbar />
         {children}
         <Footer />
