@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,10 +10,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
 
           {/* BRAND */}
-          <div>
-            <h2 className="text-2xl font-bold">
-              Benkims Tech Limited
-            </h2>
+      <div className="flex items-center gap-3">
+        <Image
+           src="/images/logo.png"
+           alt="Benkims Tech Logo"
+           width={35}
+           height={35}
+       />
+
+  <h1 className="text-2xl font-bold">
+    Benkims Tech Limited
+  </h1>
 
             <p className="mt-4 text-gray-300 text-sm leading-relaxed">
               Professional Electrical, CCTV, Landscaping, Nursery,
