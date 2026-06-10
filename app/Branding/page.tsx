@@ -1,25 +1,26 @@
 export default function BrandingPage() {
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+    <main className="max-w-7xl mx-auto px-6 py-16">
+
       <h1 className="text-4xl font-bold mb-6">
-        Branding & Printing Services
+        Branding Services
       </h1>
 
-      <p className="text-lg mb-8">
-        We provide professional branding and printing solutions for businesses,
-        organizations and individuals across Kenya.
+      <p className="text-gray-600 mb-8">
+        We offer professional branding solutions for businesses across Kenya
+        including logos, business cards, banners, shop branding, vehicle branding
+        and corporate identity design.
       </p>
 
-      <ul className="space-y-4">
-        <li>✓ Business Cards</li>
-        <li>✓ Flyers & Brochures</li>
-        <li>✓ Banners</li>
-        <li>✓ Vehicle Branding</li>
-        <li>✓ Shop Signage</li>
-        <li>✓ Stickers & Labels</li>
-        <li>✓ Promotional Merchandise</li>
-        <li>✓ Corporate Branding</li>
+      <ul className="space-y-3 text-gray-700">
+        <li>✔ Logo Design</li>
+        <li>✔ Business Cards</li>
+        <li>✔ Banners & Posters</li>
+        <li>✔ Shop Branding</li>
+        <li>✔ Vehicle Branding</li>
+        <li>✔ Corporate Identity</li>
       </ul>
+
     </main>
   );
 }
