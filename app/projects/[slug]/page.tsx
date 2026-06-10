@@ -40,6 +40,12 @@ const projects: Record<string, any> = {
     image: "/images/nursery.jpg",
     description: "Quality nursery plants for gardens and farms.",
   },
+
+  branding: {
+    title: "Branding & Printing",
+    image: "/images/branding.jpg",
+    description: "We provide high-quality branding and printing solutions including business cards, flyers, brochures, banners, stickers, vehicle branding, shop signage, branded merchandise and promotional materials.",
+  },
 };
 
 export default async function ProjectPage({

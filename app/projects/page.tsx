@@ -58,6 +58,14 @@ export default function ProjectsPage() {
           badgeColor="bg-pink-600"
         />
 
+        <ProjectCard
+          title="Branding & Printing"
+          image="/images/branding.jpg"
+          href="/projects/branding"
+          category="Branding"
+          badgeColor="bg-blue-600"
+        />
+
       </div>
     </main>
   );
