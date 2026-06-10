@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -10,9 +11,19 @@ export default function Navbar() {
     <nav className="bg-white shadow sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
 
-        <h1 className="font-bold text-xl md:text-2xl text-blue-700">
-          Benkims Tech
-        </h1>
+        <div className="flex items-center gap-3">
+  <Image
+    src="/images/logo.png"
+    alt="Benkims Tech Logo"
+    width={50}
+    height={50}
+    priority
+  />
+
+  <h1 className="font-bold text-lg sm:text-xl md:text-2xl text-blue-700">
+    Benkims Tech
+  </h1>
+</div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-6 text-sm md:text-base">
@@ -26,11 +37,12 @@ export default function Navbar() {
 
         {/* Mobile Button */}
         <button
-          className="md:hidden text-2xl"
-          onClick={() => setOpen(!open)}
-        >
-          ☰
-        </button>
+  className="md:hidden text-2xl font-bold"
+  onClick={() => setOpen(!open)}
+  aria-label="Toggle Menu"
+>
+  {open ? "✕" : "☰"}
+</button>
       </div>
 
       {/* Mobile Menu */}
