@@ -12,7 +12,7 @@ export default function AboutSection() {
 
           <p className="text-gray-700 text-lg leading-relaxed mb-4">
             Benkims Tech Limited is a professional service company specializing in
-            electrical installations, CCTV systems, plumbing, landscaping, nursery
+            electrical installations, CCTV systems, printing, branding, plumbing, landscaping, nursery
             plants, and construction services.
           </p>
 
@@ -23,7 +23,7 @@ export default function AboutSection() {
         </div>
 
         {/* Image */}
-        <div className="h-80 rounded-xl bg-[url('/images/construction.jpg')] bg-cover bg-center shadow-lg" />
+        <div className="h-80 rounded-xl bg-[url('/images/hero1.jpg')] bg-cover bg-center shadow-lg" />
 
       </div>
 

@@ -8,7 +8,7 @@ export default function AboutPage() {
 
       <p className="text-lg leading-8 mb-8">
         Benkims Tech Limited is a Kenyan company providing professional
-        electrical services, CCTV installation, landscaping, nursery plants,
+        electrical services, CCTV installation, branding, printing, landscaping, nursery plants,
         plumbing and construction solutions for residential, commercial and
         institutional clients.
       </p>
@@ -30,7 +30,7 @@ export default function AboutPage() {
 
           <p>
             To become one of Kenya's most trusted providers of electrical,
-            security, landscaping and construction services.
+            security, branding, printing, landscaping and construction services.
           </p>
         </div>
 
