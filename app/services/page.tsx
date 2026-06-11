@@ -42,7 +42,7 @@ const services = [
   {
     title: "Spraying",
     description:
-      "Professional spraying services for farms, compounds and properties with safe pesticide application, vegetation treatment and equipment handling.",
+      "Professional spraying services for farms, vegetation treatment and equipment handling.",
   },
 ];
 

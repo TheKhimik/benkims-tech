@@ -12,7 +12,7 @@ export default function AboutSection() {
 
           <p className="text-gray-700 text-lg leading-relaxed mb-4">
             Benkims Tech Limited is a professional service company specializing in
-            electrical installations, CCTV systems, printing, branding, plumbing, landscaping, nursery
+            electrical installations, CCTV systems, printing, branding, plumbing, landscaping, spraying, nursery
             plants, and construction services.
           </p>
 

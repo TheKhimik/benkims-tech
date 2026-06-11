@@ -23,7 +23,7 @@ export default function Footer() {
   </h1>
 
             <p className="mt-4 text-gray-300 text-sm leading-relaxed">
-              Professional Electrical, CCTV, Landscaping, Nursery,
+              Professional Electrical, CCTV, Landscaping, Spraying, Nursery,
               Plumbing, Construction, Branding and Printing Services
               across Kenya.
             </p>

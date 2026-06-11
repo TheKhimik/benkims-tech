@@ -18,7 +18,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl mt-6 max-w-2xl text-gray-100">
-          Professional Electrical, CCTV, Landscaping, Nursery Plants, Plumbing, Construction, Branding and Printing Services.
+          Professional Electrical, CCTV, Landscaping, Spraying, Nursery Plants, Plumbing, Construction, Branding and Printing Services.
         </p>
 
         <div className="mt-8 flex gap-4">
