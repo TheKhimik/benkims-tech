@@ -15,8 +15,8 @@ export default function Navbar() {
   <Image
     src="/images/logo.png"
     alt="Benkims Tech Logo"
-    width={65}
-    height={65}
+    width={100}
+    height={100}
     priority
   />
 

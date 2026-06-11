@@ -14,8 +14,8 @@ export default function Footer() {
         <Image
            src="/images/logo.png"
            alt="Benkims Tech Logo"
-           width={45}
-           height={45}
+           width={75}
+           height={75}
        />
 
   <h1 className="text-2xl font-bold">
