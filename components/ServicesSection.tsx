@@ -10,21 +10,25 @@ export default function ServicesSection() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        {services.map((service) => (
-          <div key={service.title} className="rounded-xl overflow-hidden shadow-lg group">
+        {services.map((service) => {
+          const firstImage = service.images?.[0];
 
-            {/* show first image */}
-            <div
-              className="h-56 bg-cover bg-center group-hover:scale-105 transition"
-              style={{ backgroundImage: `url(${service.images[0]})` }}
-            />
+          return (
+            <div key={service.title} className="rounded-xl overflow-hidden shadow-lg group">
 
-            <div className="p-4">
-              <h3 className="font-bold text-xl">{service.title}</h3>
+              {/* show first image or fallback */}
+              <div
+                className={`h-56 ${firstImage ? "bg-cover bg-center" : "bg-gray-100"} group-hover:scale-105 transition`}
+                style={firstImage ? { backgroundImage: `url(${firstImage})` } : undefined}
+              />
+
+              <div className="p-4">
+                <h3 className="font-bold text-xl">{service.title}</h3>
+              </div>
+
             </div>
-
-          </div>
-        ))}
+          );
+        })}
 
       </div>
     </section>

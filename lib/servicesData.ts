@@ -55,4 +55,11 @@ export const services = [
       "/images/printing2.jpg",
     ],
   },
+  {
+    title: "Spraying",
+    images: [
+      "/images/hero1.jpg",
+      "/images/landscape1.jpg",
+    ],
+  },
 ];

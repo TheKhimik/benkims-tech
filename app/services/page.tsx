@@ -39,6 +39,11 @@ const services = [
     description:
       "High-quality printing services including business cards, flyers, posters, banners, brochures and promotional materials.",
   },
+  {
+    title: "Spraying",
+    description:
+      "Professional spraying services for farms, compounds and properties with safe pesticide application, vegetation treatment and equipment handling.",
+  },
 ];
 
 export default function ServicesPage() {
