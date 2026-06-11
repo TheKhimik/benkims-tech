@@ -73,10 +73,10 @@ export default function Footer() {
               <p>📞 +254 701 033 088</p>
 
               <a
-                href="mailto:worltechololulunga@gmail.com"
+                href="mailto:worldtechololulunga@gmail.com"
                 className="block hover:text-blue-400"
               >
-                ✉️ worltechololulunga@gmail.com
+                ✉️ worldtechololulunga@gmail.com
               </a>
 
               <p>📍 Ololulung'a, Narok County</p>

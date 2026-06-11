@@ -7,44 +7,82 @@ type ProjectParams = {
 const projects: Record<string, any> = {
   electrical: {
     title: "Electrical Installation",
-    image: "/images/electrical.jpg",
-    description: "We provide safe and professional electrical installation services.",
+    images: [
+      "/images/electrical1.jpg",
+      "/images/electrical2.jpg",
+    ],
+    description:
+      "We provide safe and professional electrical installation services.",
   },
 
   cctv: {
     title: "CCTV Installation",
-    image: "/images/cctv.jpg",
-    description: "Professional CCTV installation for homes and businesses.",
+    images: [
+      "/images/cctv1.jpg",
+      "/images/cctv2.jpg",
+    ],
+    description:
+      "Professional CCTV installation for homes and businesses.",
   },
 
   plumbing: {
     title: "Plumbing Services",
-    image: "/images/plumbing.jpg",
-    description: "Reliable plumbing installation and repair services.",
+    images: [
+      "/images/plumbing1.jpg",
+      "/images/plumbing2.jpg",
+    ],
+    description:
+      "Reliable plumbing installation and repair services.",
   },
 
   construction: {
     title: "Construction Projects",
-    image: "/images/construction.jpg",
-    description: "High-quality building and construction services.",
+    images: [
+      "/images/construction1.jpg",
+      "/images/construction2.jpg",
+    ],
+    description:
+      "High-quality building and construction services.",
   },
 
   landscape: {
     title: "Landscaping Services",
-    image: "/images/landscape.jpg",
-    description: "Creative landscaping and outdoor design solutions.",
+    images: [
+      "/images/landscape1.jpg",
+      "/images/landscape2.jpg",
+    ],
+    description:
+      "Creative landscaping and outdoor design solutions.",
   },
 
   nursery: {
     title: "Nursery Plants",
-    image: "/images/nursery.jpg",
-    description: "Quality nursery plants for gardens and farms.",
+    images: [
+      "/images/nursery1.jpg",
+      "/images/nursery2.jpg",
+    ],
+    description:
+      "Quality nursery plants for gardens and farms.",
   },
 
   branding: {
-    title: "Branding & Printing",
-    image: "/images/branding.jpg",
-    description: "We provide high-quality branding and printing solutions including business cards, flyers, brochures, banners, stickers, vehicle branding, shop signage, branded merchandise and promotional materials.",
+    title: "Branding Services",
+    images: [
+      "/images/branding1.jpg",
+      "/images/branding2.jpg",
+    ],
+    description:
+      "High-quality branding solutions including banners, stickers, vehicle branding, shop signage and promotional materials.",
+  },
+
+  printing: {
+    title: "Printing Services",
+    images: [
+      "/images/printing1.jpg",
+      "/images/printing2.jpg",
+    ],
+    description:
+      "Professional printing services including business cards, brochures, flyers, posters and branded materials.",
   },
 };
 
@@ -66,18 +104,26 @@ export default async function ProjectPage({
         {project.title}
       </h1>
 
-      <div
-        className="h-96 bg-cover bg-center rounded-xl mb-6"
-        style={{ backgroundImage: `url(${project.image})` }}
-      />
-
       <p className="text-lg text-gray-700 mb-8">
         {project.description}
       </p>
 
+      {/* Project Images */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+        {project.images.map((image: string, index: number) => (
+          <div
+            key={index}
+            className="h-72 rounded-xl bg-cover bg-center shadow-lg hover:scale-105 transition"
+            style={{ backgroundImage: `url(${image})` }}
+          />
+        ))}
+      </div>
+
       <a
         href="https://wa.me/254701033088"
-        className="bg-green-600 text-white px-4 sm:px-6 py-3 rounded-lg font-semibold inline-block"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold inline-block"
       >
         Request This Service on WhatsApp
       </a>

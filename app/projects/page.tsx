@@ -12,7 +12,7 @@ export default function ProjectsPage() {
 
         <ProjectCard
           title="Electrical Installation"
-          image="/images/electrical.jpg"
+          image="/images/electrical1.jpg"
           href="/projects/electrical"
           category="Electrical"
           badgeColor="bg-blue-600"
@@ -20,7 +20,7 @@ export default function ProjectsPage() {
 
         <ProjectCard
           title="CCTV Installation"
-          image="/images/cctv.jpg"
+          image="/images/cctv1.jpg"
           href="/projects/cctv"
           category="Security"
           badgeColor="bg-green-600"
@@ -28,7 +28,7 @@ export default function ProjectsPage() {
 
         <ProjectCard
           title="Plumbing Work"
-          image="/images/plumbing.jpg"
+          image="/images/plumbing1.jpg"
           href="/projects/plumbing"
           category="Plumbing"
           badgeColor="bg-cyan-600"
@@ -36,7 +36,7 @@ export default function ProjectsPage() {
 
         <ProjectCard
           title="Construction Project"
-          image="/images/construction.jpg"
+          image="/images/construction1.jpg"
           href="/projects/construction"
           category="Construction"
           badgeColor="bg-yellow-600"
@@ -44,7 +44,7 @@ export default function ProjectsPage() {
 
         <ProjectCard
           title="Landscaping Work"
-          image="/images/landscape.jpg"
+          image="/images/landscape1.jpg"
           href="/projects/landscape"
           category="Landscaping"
           badgeColor="bg-green-700"
@@ -52,21 +52,30 @@ export default function ProjectsPage() {
 
         <ProjectCard
           title="Nursery Project"
-          image="/images/nursery.jpg"
+          image="/images/nursery1.jpg"
           href="/projects/nursery"
           category="Nursery"
           badgeColor="bg-pink-600"
         />
 
         <ProjectCard
-          title="Branding & Printing"
-          image="/images/branding.jpg"
+          title="Branding Project"
+          image="/images/branding1.jpg"
           href="/projects/branding"
           category="Branding"
-          badgeColor="bg-blue-600"
+          badgeColor="bg-purple-600"
+        />
+
+        <ProjectCard
+          title="Printing Project"
+          image="/images/printing1.jpg"
+          href="/projects/printing"
+          category="Printing"
+          badgeColor="bg-red-600"
         />
 
       </div>
+
     </main>
   );
 }
