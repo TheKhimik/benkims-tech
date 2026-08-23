@@ -9,7 +9,6 @@ export default function sitemap() {
       lastModified: new Date(),
     },
     {
-      url: "https://benkims-tech.vercel.app/gallery",
       lastModified: new Date(),
     },
     {

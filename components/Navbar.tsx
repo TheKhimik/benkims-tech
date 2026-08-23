@@ -18,6 +18,7 @@ export default function Navbar() {
     width={130}
     height={130}
     priority
+    style={{ width: "auto", height: "auto" }}
   />
 
   <h1 className="font-bold text-lg sm:text-xl md:text-2xl text-blue-700">
@@ -31,7 +32,6 @@ export default function Navbar() {
           <Link href="/about">About</Link>
           <Link href="/services">Services</Link>
           <Link href="/projects">Projects</Link>
-          <Link href="/gallery">Gallery</Link>
           <Link href="/contact">Contact</Link>
         </div>
 
@@ -52,7 +52,6 @@ export default function Navbar() {
           <Link href="/about" onClick={() => setOpen(false)}>About</Link>
           <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
           <Link href="/projects" onClick={() => setOpen(false)}>Projects</Link>
-          <Link href="/gallery" onClick={() => setOpen(false)}>Gallery</Link>
           <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
         </div>
       )}

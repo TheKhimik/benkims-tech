@@ -16,6 +16,7 @@ export default function Footer() {
            alt="Benkims Tech Logo"
            width={75}
            height={75}
+           style={{ width: "auto", height: "auto" }}
        />
 
   <h1 className="text-2xl font-bold">
@@ -52,9 +53,6 @@ export default function Footer() {
                 Projects
               </Link>
 
-              <Link href="/gallery" className="hover:text-white">
-                Gallery
-              </Link>
 
               <Link href="/contact" className="hover:text-white">
                 Contact

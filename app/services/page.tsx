@@ -1,81 +1,45 @@
-const services = [
-  {
-    title: "Electrical Services",
-    description:
-      "Domestic wiring, commercial installations, maintenance, solar connections and fault diagnosis across residential and industrial projects.",
-  },
-  {
-    title: "CCTV Installation",
-    description:
-      "Professional surveillance systems for homes, businesses and institutions with remote monitoring setup and maintenance.",
-  },
-  {
-    title: "Landscaping",
-    description:
-      "Garden design, lawn establishment, irrigation systems and complete compound beautification for homes and businesses.",
-  },
-  {
-    title: "Nursery Plants",
-    description:
-      "High-quality fruit seedlings, ornamental plants and indigenous trees for farming and landscaping projects.",
-  },
-  {
-    title: "Plumbing",
-    description:
-      "Water systems installation, drainage solutions, leak repairs and full plumbing maintenance services.",
-  },
-  {
-    title: "Construction",
-    description:
-      "Residential and commercial building projects, renovations, finishing works and site management services.",
-  },
-  {
-    title: "Branding",
-    description:
-      "Business branding solutions including logos, corporate identity design, shop branding and visual marketing materials.",
-  },
-  {
-    title: "Printing",
-    description:
-      "High-quality printing services including business cards, flyers, posters, banners, brochures and promotional materials.",
-  },
-  {
-    title: "Spraying",
-    description:
-      "Professional spraying services for farms, vegetation treatment and equipment handling.",
-  },
-];
+import Image from "next/image";
+import { getMergedServices, MergedService } from "@/lib/mergedServices";
 
-export default function ServicesPage() {
+export default async function ServicesPage() {
+  const mergedServices = await getMergedServices();
+
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 py-20">
-
-      <h1 className="text-5xl font-bold text-center mb-12">
-        Our Professional Services
-      </h1>
+      <h1 className="text-5xl font-bold text-center mb-12">Our Professional Services</h1>
 
       <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-        We provide reliable, affordable and high-quality technical and creative
-        services across Ololulung'a and Narok, helping individuals and businesses grow.
+        We provide reliable, affordable and high-quality technical and creative services across Ololulung'a and Narok, helping individuals and businesses grow.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {mergedServices.map((service: MergedService, index) => {
+          const isFirstRow = index < 3;
 
-        {services.map((service) => (
-          <div
-            key={service.title}
-            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition border border-gray-100"
-          >
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">
-              {service.title}
-            </h2>
+          return (
+            <div
+              key={service.title}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition border border-gray-100 overflow-hidden"
+            >
+              <div className="h-56 relative">
+                <Image
+                  src={service.image_url}
+                  alt={`${service.title} service`}
+                  fill
+                  priority={isFirstRow}
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
 
-            <p className="text-gray-600 leading-relaxed">
-              {service.description}
-            </p>
-          </div>
-        ))}
+              <div className="p-8">
+                <h2 className="text-2xl font-bold mb-4 text-gray-800">{service.title}</h2>
 
+                <p className="text-gray-600 leading-relaxed">{service.description}</p>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </main>
   );
